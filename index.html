@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DuoTutor — Two-Player Language Learning, Face to Face</title>
+<meta name="description" content="DuoTutor turns one device into a two-person classroom. Asymmetric tabletop dual-play, 3 adaptive postures, on-device pronunciation grading, Apple Watch remote. 100% offline. 3 Duo sessions free, then $14.99 once.">
+<meta name="keywords" content="DuoTutor, vocabulary, flashcards, language learning, tabletop, two player, pronunciation, spaced repetition, teacher, offline, Apple Watch">
+<meta name="author" content="Tarik Davulcu">
+<meta name="theme-color" content="#0B0B0E">
+<link rel="canonical" href="https://tarikdavulcu.github.io/duotutor/">
+<link rel="alternate" hreflang="en" href="https://tarikdavulcu.github.io/duotutor/?lang=en">
+<link rel="alternate" hreflang="de" href="https://tarikdavulcu.github.io/duotutor/?lang=de">
+<link rel="alternate" hreflang="fr" href="https://tarikdavulcu.github.io/duotutor/?lang=fr">
+<link rel="alternate" hreflang="ar" href="https://tarikdavulcu.github.io/duotutor/?lang=ar">
+<link rel="alternate" hreflang="es" href="https://tarikdavulcu.github.io/duotutor/?lang=es">
+<link rel="alternate" hreflang="ja" href="https://tarikdavulcu.github.io/duotutor/?lang=ja">
+<link rel="alternate" hreflang="x-default" href="https://tarikdavulcu.github.io/duotutor/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DuoTutor">
+<meta property="og:title" content="DuoTutor — Two Minds. One Device.">
+<meta property="og:description" content="Asymmetric tabletop language learning for two. On-device voice grading. Zero cloud. 3 free Duo sessions.">
+<meta property="og:url" content="https://tarikdavulcu.github.io/duotutor/">
+<meta property="og:image" content="https://tarikdavulcu.github.io/duotutor/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="ja_JP">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DuoTutor — Two Minds. One Device.">
+<meta name="twitter:description" content="Asymmetric tabletop language learning for two. 100% offline. $14.99 once.">
+<meta name="twitter:image" content="https://tarikdavulcu.github.io/duotutor/og-image.png">
+<meta name="apple-itunes-app" content="app-id=6823791162">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "DuoTutor",
+  "alternateName": "com.tarikdavulcu.duotutor",
+  "operatingSystem": "iOS 18.0 or later, iPadOS 18.0 or later, watchOS 11.0 or later",
+  "applicationCategory": "EducationalApplication",
+  "description": "Two-player, posture-adaptive language tutor with asymmetric tabletop mode, on-device pronunciation grading, Apple Watch remote and Lock Screen widgets. Fully offline.",
+  "inLanguage": ["en", "de", "fr", "ar", "es", "ja"],
+  "url": "https://tarikdavulcu.github.io/duotutor/",
+  "downloadUrl": "https://apps.apple.com/app/id6823791162",
+  "author": { "@type": "Person", "name": "Tarik Davulcu" },
+  "offers": [
+    { "@type": "Offer", "name": "Free Trial — 3 Duo Sessions", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "DuoTutor Pro Lifetime", "price": "14.99", "priceCurrency": "USD", "sku": "com.tarikdavulcu.duotutor.pro.lifetime" },
+    { "@type": "Offer", "name": "DuoTutor Teacher Pack", "price": "29.99", "priceCurrency": "USD", "sku": "com.tarikdavulcu.duotutor.teacher.yearly",
+      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "29.99", "priceCurrency": "USD", "billingDuration": "P1Y" } }
+  ],
+  "featureList": ["Asymmetric tabletop dual-player mode", "Closed, Open and Tabletop postures", "On-device speech recognition", "SM-2 spaced repetition", "Apple Watch tutor remote", "Live Activities", "Interactive Lock Screen widget", "Offline PDF reports"]
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366F1'/%3E%3Cstop offset='1' stop-color='%2310B981'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Crect x='14' y='12' width='36' height='18' rx='4' fill='white' opacity='.95'/%3E%3Crect x='14' y='34' width='36' height='18' rx='4' fill='white' opacity='.6'/%3E%3C/svg%3E">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;700;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #0B0B0E; --surface: rgba(255,255,255,0.045); --border: rgba(255,255,255,0.09);
+    --fg: #EDEDF5; --muted: #9A9AB2; --indigo: #6366F1; --violet: #8B5CF6; --emerald: #10B981; --mint: #34D399;
+  }
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body { background: var(--bg); color: var(--fg); font-family: Inter, system-ui, -apple-system, sans-serif; overflow-x: hidden; }
+  html[lang="ar"] body { font-family: "Noto Sans Arabic", Inter, sans-serif; }
+  html[lang="ja"] body { font-family: "Noto Sans JP", Inter, sans-serif; }
+  a { color: #A5B4FC; }
+  .text-muted-2 { color: var(--muted) !important; }
+  .bg-orbs::before, .bg-orbs::after { content: ""; position: fixed; z-index: -1; width: 60vmax; height: 60vmax; border-radius: 50%; filter: blur(120px); opacity: .35; pointer-events: none; }
+  .bg-orbs::before { background: var(--indigo); top: -25vmax; left: -20vmax; animation: drift 18s ease-in-out infinite alternate; }
+  .bg-orbs::after { background: var(--emerald); bottom: -30vmax; right: -25vmax; opacity: .22; animation: drift 22s ease-in-out infinite alternate-reverse; }
+  @keyframes drift { to { transform: translate(6vmax, 4vmax) scale(1.08); } }
+
+  .glass { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+  .navbar { background: rgba(11,11,14,0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+  .navbar .nav-link { color: var(--muted); font-weight: 500; }
+  .navbar .nav-link:hover { color: var(--fg); }
+  .brand-mark { width: 34px; height: 34px; }
+  .grad-text { background: linear-gradient(90deg, #fff 0%, #C4B5FD 55%, var(--mint) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .kicker { display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .4rem .9rem; border-radius: 999px; background: rgba(99,102,241,.15); color: #C7C8FF; border: 1px solid rgba(99,102,241,.35); }
+  h1.display-3 { font-weight: 900; letter-spacing: -.03em; line-height: 1.02; }
+  html[lang="ja"] h1.display-3, html[lang="ar"] h1.display-3 { letter-spacing: 0; line-height: 1.2; }
+  section { padding: 96px 0; }
+
+  .btn-appstore { display: inline-flex; align-items: center; gap: 12px; background: #000; color: #fff; border: 1px solid #A6A6A6; border-radius: 12px; padding: 10px 20px 10px 16px; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+  .btn-appstore:hover { color: #fff; transform: translateY(-2px); box-shadow: 0 12px 30px rgba(99,102,241,.35); }
+  .btn-appstore small { display: block; font-size: .7rem; line-height: 1; font-weight: 500; }
+  .btn-appstore strong { display: block; font-size: 1.35rem; line-height: 1.1; font-weight: 600; letter-spacing: -.01em; }
+  .btn-ghost { border: 1px solid var(--border); color: var(--fg); border-radius: 12px; padding: 14px 22px; font-weight: 600; }
+  .btn-ghost:hover { background: var(--surface); color: #fff; }
+
+  /* Posture preview */
+  .posture-toggle .btn { color: var(--muted); border-color: var(--border); font-weight: 600; }
+  .posture-toggle .btn.active { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+  .stage { height: 460px; display: grid; place-items: center; perspective: 1400px; overflow: hidden; }
+  .dev-wrap { transform-origin: center; }
+  @media (max-width: 480px) { .stage { height: 380px; } .dev-wrap { transform: scale(.78); } }
+  .dev { position: relative; transition: all .7s cubic-bezier(.2,.8,.2,1); transform-style: preserve-3d; }
+  .half { position: absolute; left: 0; width: 100%; border: 3px solid #3A3A48; background: #000; overflow: hidden; transition: all .7s cubic-bezier(.2,.8,.2,1); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 14px; }
+  .half .lbl { font-size: .7rem; font-weight: 800; letter-spacing: .1em; }
+  .half .word { font-size: 1.5rem; font-weight: 900; }
+  .half .chips { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+  .half .chips span { font-size: .7rem; padding: 4px 8px; border-radius: 8px; background: rgba(255,255,255,.08); }
+  .half.a { background: linear-gradient(180deg,#0E1517,#10261f); } .half.a .lbl { color: var(--mint); }
+  .half.b { background: linear-gradient(180deg,#151030,#1d1747); } .half.b .lbl { color: #A5B4FC; }
+  .half.b .inner { transition: transform .7s; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  /* closed */
+  .dev[data-p="closed"] { width: 200px; height: 410px; }
+  .dev[data-p="closed"] .half { height: 100%; top: 0; border-radius: 34px; }
+  .dev[data-p="closed"] .half.b { opacity: 0; transform: rotateX(-180deg); transform-origin: top center; }
+  /* open */
+  .dev[data-p="open"] { width: 360px; height: 440px; }
+  .dev[data-p="open"] .half { height: 50%; }
+  .dev[data-p="open"] .half.b { top: 0; border-radius: 30px 30px 0 0; border-bottom-width: 1px; }
+  .dev[data-p="open"] .half.a { top: 50%; border-radius: 0 0 30px 30px; border-top-width: 1px; }
+  /* tabletop */
+  .dev[data-p="tabletop"] { width: 360px; height: 440px; transform: rotateX(28deg); }
+  .dev[data-p="tabletop"] .half { height: 50%; }
+  .dev[data-p="tabletop"] .half.b { top: 0; border-radius: 30px 30px 0 0; transform-origin: bottom center; transform: rotateX(-62deg); }
+  .dev[data-p="tabletop"] .half.b .inner { transform: rotate(180deg); }
+  .dev[data-p="tabletop"] .half.a { top: 50%; border-radius: 0 0 30px 30px; }
+  .posture-caption { min-height: 3em; }
+
+  /* Bento */
+  .bento { display: grid; gap: 20px; grid-template-columns: repeat(6, 1fr); }
+  .bento .tile { padding: 32px; position: relative; overflow: hidden; transition: transform .35s, border-color .35s; }
+  .bento .tile:hover { transform: translateY(-4px); border-color: rgba(99,102,241,.5); }
+  .bento .t1 { grid-column: span 4; grid-row: span 2; } .bento .t2 { grid-column: span 2; }
+  .bento .t3 { grid-column: span 2; } .bento .t4 { grid-column: span 6; }
+  @media (max-width: 991px) { .bento { grid-template-columns: 1fr; } .bento .tile { grid-column: auto !important; grid-row: auto !important; } }
+  .tile .icon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 1.5rem; margin-bottom: 18px; }
+  .ic-indigo { background: rgba(99,102,241,.18); } .ic-emerald { background: rgba(16,185,129,.18); } .ic-violet { background: rgba(139,92,246,.18); }
+  .split-demo { display: grid; grid-template-rows: 1fr 6px 1fr; height: 260px; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); margin-top: 24px; }
+  .split-demo > div { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
+  .split-demo .sb { background: #151030; } .split-demo .sb .flip { transform: rotate(180deg); text-align: center; }
+  .split-demo .crease { background: linear-gradient(90deg,#000,#3a3a48,#000); }
+  .split-demo .sa { background: #0E1517; }
+  .wave { display: flex; gap: 4px; align-items: center; height: 60px; margin-top: 18px; }
+  .wave i { display: block; width: 6px; border-radius: 3px; background: var(--mint); animation: wv 1.2s ease-in-out infinite; }
+  @keyframes wv { 50% { transform: scaleY(.35); } }
+
+  /* Pricing */
+  .price-card { padding: 36px; height: 100%; display: flex; flex-direction: column; transition: transform .35s; }
+  .price-card:hover { transform: translateY(-6px); }
+  .price-card.featured { background: linear-gradient(160deg, rgba(99,102,241,.35), rgba(16,185,129,.18)); border-color: rgba(165,180,252,.6); box-shadow: 0 30px 80px rgba(99,102,241,.25); }
+  .price { font-size: 3.2rem; font-weight: 900; letter-spacing: -.03em; }
+  .price-card ul { list-style: none; padding: 0; margin: 20px 0 28px; flex: 1; }
+  .price-card li { padding: 6px 0; color: #D4D4E2; }
+  .price-card li::before { content: "✓"; color: var(--mint); font-weight: 800; margin-inline-end: 10px; }
+  .badge-soft { background: rgba(255,255,255,.1); color: #fff; font-weight: 700; letter-spacing: .06em; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s, transform .8s; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } .bg-orbs::before, .bg-orbs::after, .wave i { animation: none; } * { transition: none !important; } }
+
+  footer { border-top: 1px solid var(--border); padding: 48px 0; color: var(--muted); }
+  .modal-content { background: #121218; color: var(--fg); border: 1px solid var(--border); border-radius: 20px; }
+  .modal-content h6 { color: #fff; margin-top: 1.2rem; }
+  .dropdown-menu { background: #16161E; border: 1px solid var(--border); }
+  .dropdown-item { color: var(--fg); } .dropdown-item:hover, .dropdown-item.active { background: var(--indigo); color: #fff; }
+</style>
+</head>
+<body class="bg-orbs">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#top" aria-label="DuoTutor home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366F1"/><stop offset="1" stop-color="#10B981"/></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#lg)"/><rect x="14" y="11" width="36" height="19" rx="5" fill="#fff" opacity=".95" transform="rotate(180 32 20.5)"/><rect x="31" y="15" width="2" height="2" fill="#fff"/><rect x="10" y="31" width="44" height="2" rx="1" fill="#0B0B0E" opacity=".35"/><rect x="14" y="34" width="36" height="19" rx="5" fill="#fff" opacity=".6"/></svg>
+      DuoTutor
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#features" data-i18n="nav_features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" data-i18n="nav_privacy">Privacy</a></li>
+        <li class="nav-item dropdown">
+          <button class="btn btn-sm btn-ghost dropdown-toggle" id="langBtn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">🌐 <span id="langLabel">English</span></button>
+          <ul class="dropdown-menu dropdown-menu-end" id="langMenu">
+            <li><button class="dropdown-item" data-lang="en">English</button></li>
+            <li><button class="dropdown-item" data-lang="de">Deutsch</button></li>
+            <li><button class="dropdown-item" data-lang="fr">Français</button></li>
+            <li><button class="dropdown-item" data-lang="ar">العربية</button></li>
+            <li><button class="dropdown-item" data-lang="es">Español</button></li>
+            <li><button class="dropdown-item" data-lang="ja">日本語</button></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="pt-5" style="padding-top:140px !important">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="kicker mb-4" data-i18n="hero_kicker">Tabletop dual-player learning</span>
+          <h1 class="display-3 mt-3 mb-4"><span class="grad-text" data-i18n="hero_title">Two Minds. One Device.</span></h1>
+          <p class="lead text-muted-2 mb-4" data-i18n="hero_sub">Lay it flat between you. The tutor gets the answer key, the learner gets the challenge, and their half flips 180° so you can sit face to face.</p>
+          <div class="d-flex flex-wrap gap-3 align-items-center">
+            <!-- Replace with Apple's official badge artwork from https://developer.apple.com/app-store/marketing/guidelines/ before launch. -->
+            <a class="btn-appstore" href="https://apps.apple.com/app/id6823791162" aria-label="Download DuoTutor on the App Store">
+              <svg width="28" height="34" viewBox="0 0 814 1000" fill="#fff" aria-hidden="true"><path d="M788 341c-6 4-108 62-108 190 0 148 130 200 134 202-1 3-21 72-69 142-43 62-88 124-156 124s-86-40-165-40c-77 0-104 41-166 41s-106-58-156-128C44 790 0 669 0 554c0-184 120-282 238-282 63 0 115 41 155 41 38 0 97-44 168-44 27 0 124 3 188 94zM554 169c30-35 51-84 51-133 0-7-1-14-2-19-48 2-106 32-140 72-27 31-53 80-53 130 0 8 1 15 2 18 3 0 8 1 13 1 43 0 98-29 129-69z"/></svg>
+              <span><small data-i18n="badge_small">Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a class="btn btn-ghost" href="#pricing" data-i18n="hero_cta2">3 free Duo sessions</a>
+          </div>
+          <p class="small text-muted-2 mt-4 mb-0" data-i18n="hero_note">iPhone · iPad · Apple Watch · 100% offline · No account</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="glass p-4">
+            <div class="btn-group w-100 posture-toggle" role="group" aria-label="Posture preview">
+              <button class="btn btn-outline-light" data-p="closed" data-i18n="p_closed">Closed</button>
+              <button class="btn btn-outline-light" data-p="open" data-i18n="p_open">Open</button>
+              <button class="btn btn-outline-light active" data-p="tabletop" data-i18n="p_tabletop">Tabletop</button>
+            </div>
+            <div class="stage" aria-live="polite">
+              <div class="dev-wrap"><div class="dev" id="dev" data-p="tabletop">
+                <div class="half b"><div class="inner"><span class="lbl" data-i18n="learner">LEARNER</span><span class="word">wanderlust</span><div class="chips"><span>Fernweh</span><span>Heimweh</span><span>Fernseher</span></div><span>🎙️ ×3</span></div></div>
+                <div class="half a"><span class="lbl" data-i18n="tutor">TUTOR</span><span class="word">Fernweh</span><small class="text-muted-2">/ˈfɛʁnˌveː/</small><div class="chips"><span>💡 Hint</span><span>✓</span><span>✕</span><span>🎚 92%</span></div></div>
+              </div></div>
+            </div>
+            <p class="posture-caption text-center text-muted-2 mb-0" id="postureCaption"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="kicker" data-i18n="feat_kicker">Built for the hardware</span>
+        <h2 class="display-5 fw-bold mt-3" data-i18n="feat_title">Not another flashcard app.</h2>
+      </div>
+      <div class="bento">
+        <article class="glass tile t1 reveal">
+          <div class="icon ic-indigo">⇅</div>
+          <h3 class="h3 fw-bold" data-i18n="f1_t">Asymmetric Tabletop Dual-Play</h3>
+          <p class="text-muted-2" data-i18n="f1_d">Two different interfaces on one screen, never mirrored. The tutor half holds the answer key, phonetics, hints and grading. The learner half shows only the challenge, a microphone and the combo meter, rotated 180° to face across the table.</p>
+          <div class="split-demo" aria-hidden="true">
+            <div class="sb"><div class="flip"><small style="color:#A5B4FC;font-weight:800">LEARNER</small><div class="fw-bold fs-4">wanderlust</div><small>Fernweh · Heimweh · Fernseher</small></div></div>
+            <div class="crease"></div>
+            <div class="sa"><small style="color:#34D399;font-weight:800">TUTOR</small><div class="fw-bold fs-4">Fernweh <small class="text-muted-2 fs-6">/ˈfɛʁnˌveː/</small></div><small>💡 Hint · ✓ Correct · ✕ Wrong · 🎚 Grade</small></div>
+          </div>
+        </article>
+        <article class="glass tile t2 reveal">
+          <div class="icon ic-violet">◰</div>
+          <h3 class="h5 fw-bold" data-i18n="f2_t">3 Adaptive Postures</h3>
+          <p class="text-muted-2 mb-0" data-i18n="f2_d">Fold for solo SM-2 drills. Lay it flat for a full analytics canvas. Tent it for two-player matches. Each posture is its own interface.</p>
+        </article>
+        <article class="glass tile t3 reveal">
+          <div class="icon ic-emerald">🎙️</div>
+          <h3 class="h5 fw-bold" data-i18n="f3_t">100% Offline Voice Grading</h3>
+          <p class="text-muted-2 mb-0" data-i18n="f3_d">Apple's on-device speech recognition scores pronunciation. Your audio never leaves the device: no servers, no analytics, no account.</p>
+          <div class="wave" aria-hidden="true"></div>
+        </article>
+        <article class="glass tile t4 reveal">
+          <div class="row align-items-center g-4">
+            <div class="col-md-7">
+              <div class="icon ic-indigo">⌚</div>
+              <h3 class="h4 fw-bold" data-i18n="f4_t">Apple Watch Tutor Remote & Lock Screen Widgets</h3>
+              <p class="text-muted-2 mb-0" data-i18n="f4_d">Walk the room and give hints, play the prompt or mark answers from your wrist, with distinct haptics. Live Activities and the Dynamic Island show the scoreboard, and the Daily Duo Challenge word flips right on your Lock Screen.</p>
+            </div>
+            <div class="col-md-5 d-flex gap-3 justify-content-center">
+              <div class="glass p-3 text-center" style="width:150px;border-radius:38px"><div class="small text-muted-2">T 24 · L 60</div><div class="fw-bold fs-5 my-2">wanderlust</div><div class="d-flex gap-2 justify-content-center"><span class="badge bg-success">✓</span><span class="badge bg-danger">✕</span><span class="badge bg-warning text-dark">💡</span></div></div>
+              <div class="glass p-3" style="width:180px"><div class="small fw-bold" style="color:#34D399">DAILY DUO</div><div class="fw-bold fs-5">gemütlich</div><div class="small text-muted-2">Tap to flip ↻</div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="kicker" data-i18n="price_kicker">Simple, fair pricing</span>
+        <h2 class="display-5 fw-bold mt-3" data-i18n="price_title">Pay once, or teach a class.</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <div class="glass price-card">
+            <span class="badge badge-soft align-self-start mb-3" data-i18n="c1_badge">FREE TRIAL</span>
+            <div class="price">$0</div>
+            <h3 class="h5 fw-bold mt-2" data-i18n="c1_t">Try 3 Full Dual-Player Sessions Free</h3>
+            <ul><li data-i18n="c1_l1">All features unlocked</li><li data-i18n="c1_l2">On-device speech grading</li><li data-i18n="c1_l3">Apple Watch & widgets</li><li data-i18n="c1_l4">Solo study free forever</li></ul>
+            <a class="btn btn-ghost w-100" href="https://apps.apple.com/app/id6823791162" data-i18n="c1_cta">Start free</a>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="glass price-card featured">
+            <span class="badge bg-light text-dark align-self-start mb-3" data-i18n="c2_badge">BEST VALUE</span>
+            <div class="price">$14.99 <small class="fs-5 fw-semibold text-muted-2" data-i18n="once">once</small></div>
+            <h3 class="h5 fw-bold mt-2" data-i18n="c2_t">DuoTutor Pro Lifetime — Pay Once, Own Forever</h3>
+            <ul><li data-i18n="c2_l1">Unlimited tabletop Duo sessions</li><li data-i18n="c2_l2">Every built-in language deck</li><li data-i18n="c2_l3">Watch & widget extensions forever</li><li data-i18n="c2_l4">Zero subscriptions</li></ul>
+            <a class="btn btn-light fw-bold w-100 py-3" href="https://apps.apple.com/app/id6823791162" data-i18n="c2_cta">Get Lifetime</a>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="glass price-card">
+            <span class="badge badge-soft align-self-start mb-3" data-i18n="c3_badge">FOR CLASSROOMS</span>
+            <div class="price">$29.99 <small class="fs-5 fw-semibold text-muted-2" data-i18n="per_year">/ year</small></div>
+            <h3 class="h5 fw-bold mt-2" data-i18n="c3_t">Teacher Pack</h3>
+            <ul><li data-i18n="c3_l1">Everything in Pro</li><li data-i18n="c3_l2">Custom JSON/CSV curriculum decks</li><li data-i18n="c3_l3">Multi-student classroom profiles</li><li data-i18n="c3_l4">1-tap offline PDF progress reports</li></ul>
+            <a class="btn btn-ghost w-100" href="https://apps.apple.com/app/id6823791162" data-i18n="c3_cta">Start Teacher Pack</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center small text-muted-2 mt-4" data-i18n="price_note">Prices in USD; local App Store pricing may vary. The Teacher Pack renews yearly and can be cancelled anytime in Settings.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <div>
+      <div class="fw-bold text-light">DuoTutor</div>
+      <small>© <span id="year"></span> Tarik Davulcu · <code class="text-muted-2">com.tarikdavulcu.duotutor</code></small>
+    </div>
+    <div class="d-flex gap-4 align-items-center">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" data-i18n="footer_privacy">Privacy Policy (GDPR · Zero Cloud)</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener" data-i18n="footer_terms">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Privacy Policy -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title fw-bold" id="privacyTitle">Privacy Policy — Zero Cloud</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted-2">Effective 17 October 2026 · Applies to the DuoTutor app (com.tarikdavulcu.duotutor), its Apple Watch app and widgets, and this website.</p>
+        <h6>1. Summary</h6>
+        <p>DuoTutor does not collect, transmit, sell or share personal data. The app has no servers, accounts, analytics, advertising or third-party SDKs. Everything you create stays on your device.</p>
+        <h6>2. Data controller</h6>
+        <p>Tarik Davulcu, the developer, is the controller under the GDPR (EU 2016/679) and the UK GDPR. Because no personal data reaches the developer, there is no processing by the developer.</p>
+        <h6>3. Data stored on your device</h6>
+        <ul>
+          <li>Study progress, review history and scores are stored locally with Apple SwiftData. iCloud sync is disabled.</li>
+          <li>Student names and notes (Teacher Pack) are encrypted with AES-256-GCM (CryptoKit). The key is kept in your device's Keychain and is not synced.</li>
+          <li>A free-trial counter is kept in the Keychain so the 3 free sessions are not reset by reinstalling.</li>
+        </ul>
+        <h6>4. Microphone & speech recognition</h6>
+        <p>Pronunciation grading uses Apple's Speech framework with on-device recognition required. Audio is processed in memory and is not recorded to disk or sent anywhere. If your language has no on-device model, grading is turned off rather than falling back to a server.</p>
+        <h6>5. Apple Watch, widgets & Live Activities</h6>
+        <p>The Watch remote talks to your iPhone only through Apple's WatchConnectivity link between your paired devices. Widgets read the daily word from a shared container on your device. Live Activities are started locally, without push tokens.</p>
+        <h6>6. Purchases</h6>
+        <p>Apple processes all payments through the App Store. The developer does not receive your payment details or identity. Apple's privacy policy applies to those transactions.</p>
+        <h6>7. Your rights (GDPR Art. 15–22)</h6>
+        <p>Your data is never in the developer's possession, so you can exercise access, rectification, erasure and portability directly in the app: export PDF reports, delete students, or delete the app to erase all data. For questions, use the support contact on the App Store listing.</p>
+        <h6>8. This website</h6>
+        <p>This site sets no cookies and runs no tracking scripts. Fonts and Bootstrap are loaded from public CDNs (Google Fonts, jsDelivr), which receive your IP address as part of a normal web request. Self-host them to avoid this.</p>
+        <h6>9. Children</h6>
+        <p>DuoTutor collects no data from anyone, including children, and is suitable for classroom use under COPPA and GDPR-K.</p>
+        <h6>10. Changes</h6>
+        <p>Any changes will be posted here with a new effective date.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const I18N = {
+  en: { _name: "English", nav_features: "Features", nav_pricing: "Pricing", nav_privacy: "Privacy",
+    hero_kicker: "Tabletop dual-player learning", hero_title: "Two Minds. One Device.",
+    hero_sub: "Lay it flat between you. The tutor gets the answer key, the learner gets the challenge, and their half flips 180° so you can sit face to face.",
+    badge_small: "Download on the", hero_cta2: "3 free Duo sessions", hero_note: "iPhone · iPad · Apple Watch · 100% offline · No account",
+    p_closed: "Closed", p_open: "Open", p_tabletop: "Tabletop", learner: "LEARNER", tutor: "TUTOR",
+    cap_closed: "Closed: solo spaced-repetition cards, streaks and a 60-second rapid quiz.",
+    cap_open: "Open: a full analytics canvas with grammar, etymology, waveforms and heatmaps.",
+    cap_tabletop: "Tabletop: two different halves. The learner's side rotates 180° to face across the table.",
+    feat_kicker: "Built for the hardware", feat_title: "Not another flashcard app.",
+    f1_t: "Asymmetric Tabletop Dual-Play", f1_d: "Two different interfaces on one screen, never mirrored. The tutor half holds the answer key, phonetics, hints and grading. The learner half shows only the challenge, a microphone and the combo meter, rotated 180° to face across the table.",
+    f2_t: "3 Adaptive Postures", f2_d: "Fold for solo SM-2 drills. Lay it flat for a full analytics canvas. Tent it for two-player matches. Each posture is its own interface.",
+    f3_t: "100% Offline Voice Grading", f3_d: "Apple's on-device speech recognition scores pronunciation. Your audio never leaves the device: no servers, no analytics, no account.",
+    f4_t: "Apple Watch Tutor Remote & Lock Screen Widgets", f4_d: "Walk the room and give hints, play the prompt or mark answers from your wrist, with distinct haptics. Live Activities and the Dynamic Island show the scoreboard, and the Daily Duo Challenge word flips right on your Lock Screen.",
+    price_kicker: "Simple, fair pricing", price_title: "Pay once, or teach a class.",
+    c1_badge: "FREE TRIAL", c1_t: "Try 3 Full Dual-Player Sessions Free", c1_l1: "All features unlocked", c1_l2: "On-device speech grading", c1_l3: "Apple Watch & widgets", c1_l4: "Solo study free forever", c1_cta: "Start free",
+    c2_badge: "BEST VALUE", once: "once", c2_t: "DuoTutor Pro Lifetime — Pay Once, Own Forever", c2_l1: "Unlimited tabletop Duo sessions", c2_l2: "Every built-in language deck", c2_l3: "Watch & widget extensions forever", c2_l4: "Zero subscriptions", c2_cta: "Get Lifetime",
+    c3_badge: "FOR CLASSROOMS", per_year: "/ year", c3_t: "Teacher Pack", c3_l1: "Everything in Pro", c3_l2: "Custom JSON/CSV curriculum decks", c3_l3: "Multi-student classroom profiles", c3_l4: "1-tap offline PDF progress reports", c3_cta: "Start Teacher Pack",
+    price_note: "Prices in USD; local App Store pricing may vary. The Teacher Pack renews yearly and can be cancelled anytime in Settings.",
+    footer_privacy: "Privacy Policy (GDPR · Zero Cloud)", footer_terms: "Terms of Use" },
+  de: { _name: "Deutsch", nav_features: "Funktionen", nav_pricing: "Preise", nav_privacy: "Datenschutz",
+    hero_kicker: "Lernen zu zweit am Tisch", hero_title: "Zwei Köpfe. Ein Gerät.",
+    hero_sub: "Flach zwischen euch legen. Der Tutor sieht die Lösung, die Lernenden die Aufgabe, und ihre Hälfte dreht sich um 180°, damit ihr euch gegenübersitzen könnt.",
+    badge_small: "Laden im", hero_cta2: "3 Duo-Runden gratis", hero_note: "iPhone · iPad · Apple Watch · 100 % offline · Kein Konto",
+    p_closed: "Geschlossen", p_open: "Geöffnet", p_tabletop: "Tabletop", learner: "LERNENDE", tutor: "TUTOR",
+    cap_closed: "Geschlossen: Karteikarten mit Spaced Repetition, Serien und 60-Sekunden-Quiz.",
+    cap_open: "Geöffnet: Analyse-Ansicht mit Grammatik, Etymologie, Wellenformen und Heatmaps.",
+    cap_tabletop: "Tabletop: zwei verschiedene Hälften. Die Seite der Lernenden dreht sich um 180°.",
+    feat_kicker: "Für die Hardware gebaut", feat_title: "Keine weitere Karteikarten-App.",
+    f1_t: "Asymmetrisches Tabletop-Duo", f1_d: "Zwei verschiedene Oberflächen auf einem Bildschirm, nie gespiegelt. Die Tutor-Hälfte zeigt Lösung, Lautschrift, Hinweise und Bewertung. Die Lernenden sehen nur Aufgabe, Mikrofon und Combo, um 180° zu ihnen gedreht.",
+    f2_t: "3 adaptive Haltungen", f2_d: "Zugeklappt für Solo-Training mit SM-2. Flach für die Analyse-Ansicht. Als Zelt für Duelle zu zweit. Jede Haltung hat ihre eigene Oberfläche.",
+    f3_t: "Aussprachebewertung 100 % offline", f3_d: "Apples Spracherkennung auf dem Gerät bewertet die Aussprache. Audio verlässt das Gerät nie: keine Server, keine Analyse, kein Konto.",
+    f4_t: "Apple Watch als Tutor-Fernbedienung & Sperrbildschirm-Widgets", f4_d: "Durch den Raum gehen und vom Handgelenk aus Hinweise geben, Audio abspielen und Antworten bewerten, mit eigener Haptik. Live-Aktivitäten und Dynamic Island zeigen den Punktestand, das Duo-Wort des Tages dreht sich direkt auf dem Sperrbildschirm.",
+    price_kicker: "Einfach und fair", price_title: "Einmal zahlen oder eine Klasse unterrichten.",
+    c1_badge: "GRATIS TESTEN", c1_t: "3 komplette Duo-Runden gratis", c1_l1: "Alle Funktionen frei", c1_l2: "Aussprachebewertung auf dem Gerät", c1_l3: "Apple Watch & Widgets", c1_l4: "Solo-Lernen dauerhaft gratis", c1_cta: "Gratis starten",
+    c2_badge: "BESTER WERT", once: "einmalig", c2_t: "DuoTutor Pro Lifetime: einmal zahlen, für immer nutzen", c2_l1: "Unbegrenzte Tabletop-Duos", c2_l2: "Alle eingebauten Sprachdecks", c2_l3: "Watch & Widgets für immer", c2_l4: "Kein Abo", c2_cta: "Lifetime holen",
+    c3_badge: "FÜR KLASSEN", per_year: "/ Jahr", c3_t: "Teacher Pack", c3_l1: "Alles aus Pro", c3_l2: "Eigene JSON/CSV-Lehrplan-Decks", c3_l3: "Profile für mehrere Lernende", c3_l4: "PDF-Fortschrittsberichte offline per Tipp", c3_cta: "Teacher Pack starten",
+    price_note: "Preise in USD; lokale App-Store-Preise können abweichen. Das Teacher Pack verlängert sich jährlich und ist jederzeit in den Einstellungen kündbar.",
+    footer_privacy: "Datenschutz (DSGVO · Zero Cloud)", footer_terms: "Nutzungsbedingungen" },
+  fr: { _name: "Français", nav_features: "Fonctions", nav_pricing: "Tarifs", nav_privacy: "Confidentialité",
+    hero_kicker: "Apprendre à deux, sur la table", hero_title: "Deux esprits. Un appareil.",
+    hero_sub: "Posez-le à plat entre vous. Le tuteur voit la réponse, l'élève le défi, et sa moitié pivote de 180° pour que vous soyez face à face.",
+    badge_small: "Télécharger dans l'", hero_cta2: "3 sessions Duo offertes", hero_note: "iPhone · iPad · Apple Watch · 100 % hors ligne · Sans compte",
+    p_closed: "Fermé", p_open: "Ouvert", p_tabletop: "Table", learner: "ÉLÈVE", tutor: "TUTEUR",
+    cap_closed: "Fermé : cartes en répétition espacée, séries et quiz éclair de 60 secondes.",
+    cap_open: "Ouvert : tableau d'analyse avec grammaire, étymologie, ondes et cartes de précision.",
+    cap_tabletop: "Table : deux moitiés différentes. Le côté élève pivote de 180° pour faire face.",
+    feat_kicker: "Pensé pour le matériel", feat_title: "Pas une énième app de flashcards.",
+    f1_t: "Duo asymétrique sur table", f1_d: "Deux interfaces différentes sur un seul écran, jamais en miroir. Le tuteur a la réponse, la phonétique, les indices et la notation. L'élève ne voit que le défi, le micro et le combo, tourné de 180° vers lui.",
+    f2_t: "3 postures adaptatives", f2_d: "Fermé pour réviser seul avec SM-2. À plat pour l'analyse complète. En tente pour les duels à deux. Chaque posture a sa propre interface.",
+    f3_t: "Correction vocale 100 % hors ligne", f3_d: "La reconnaissance vocale d'Apple sur l'appareil évalue la prononciation. L'audio ne quitte jamais l'appareil : ni serveur, ni statistiques, ni compte.",
+    f4_t: "Télécommande Apple Watch & widgets d'écran verrouillé", f4_d: "Circulez dans la salle et donnez des indices, lancez l'audio ou validez les réponses depuis votre poignet, avec un retour haptique distinct. Les Activités en direct et la Dynamic Island affichent le score, et le mot Duo du jour se retourne sur l'écran verrouillé.",
+    price_kicker: "Des tarifs simples et justes", price_title: "Payez une fois, ou enseignez à une classe.",
+    c1_badge: "ESSAI GRATUIT", c1_t: "3 sessions Duo complètes offertes", c1_l1: "Toutes les fonctions incluses", c1_l2: "Correction vocale sur l'appareil", c1_l3: "Apple Watch & widgets", c1_l4: "Révision solo gratuite à vie", c1_cta: "Commencer gratuitement",
+    c2_badge: "MEILLEUR CHOIX", once: "une fois", c2_t: "DuoTutor Pro à vie : un seul paiement, pour toujours", c2_l1: "Sessions Duo illimitées", c2_l2: "Tous les paquets de langues", c2_l3: "Watch & widgets pour toujours", c2_l4: "Aucun abonnement", c2_cta: "Obtenir Pro à vie",
+    c3_badge: "POUR LES CLASSES", per_year: "/ an", c3_t: "Pack Enseignant", c3_l1: "Tout Pro inclus", c3_l2: "Paquets JSON/CSV personnalisés", c3_l3: "Profils pour plusieurs élèves", c3_l4: "Rapports PDF hors ligne en un geste", c3_cta: "Démarrer le Pack Enseignant",
+    price_note: "Prix en USD ; les tarifs locaux de l'App Store peuvent varier. Le Pack Enseignant se renouvelle chaque année et se résilie à tout moment dans Réglages.",
+    footer_privacy: "Confidentialité (RGPD · Zéro cloud)", footer_terms: "Conditions d'utilisation" },
+  ar: { _name: "العربية", nav_features: "المزايا", nav_pricing: "الأسعار", nav_privacy: "الخصوصية",
+    hero_kicker: "تعلّم ثنائي على الطاولة", hero_title: "عقلان. جهاز واحد.",
+    hero_sub: "ضعه مسطحًا بينكما. يرى المعلّم الإجابة ويرى المتعلّم التحدي، ويُدار نصفه 180° لتجلسا وجهًا لوجه.",
+    badge_small: "حمّله من", hero_cta2: "3 جلسات ثنائية مجانًا", hero_note: "iPhone · iPad · Apple Watch · بدون إنترنت 100% · بدون حساب",
+    p_closed: "مغلق", p_open: "مفتوح", p_tabletop: "الطاولة", learner: "المتعلّم", tutor: "المعلّم",
+    cap_closed: "مغلق: بطاقات بالتكرار المتباعد وسلاسل أيام واختبار سريع لمدة 60 ثانية.",
+    cap_open: "مفتوح: لوحة تحليل كاملة بالقواعد وأصل الكلمات والموجات الصوتية.",
+    cap_tabletop: "الطاولة: نصفان مختلفان، ونصف المتعلّم يُدار 180° ليواجهه.",
+    feat_kicker: "مصمَّم للأجهزة", feat_title: "ليس مجرد تطبيق بطاقات آخر.",
+    f1_t: "لعب ثنائي غير متماثل على الطاولة", f1_d: "واجهتان مختلفتان على شاشة واحدة دون انعكاس. نصف المعلّم فيه الإجابة والنطق والتلميحات والتقييم، ونصف المتعلّم فيه التحدي والميكروفون وعدّاد السلسلة فقط، مُدارًا 180° نحوه.",
+    f2_t: "3 وضعيات تكيّفية", f2_d: "مغلق للتدريب الفردي بنظام SM-2، ومسطح للوحة التحليل، وعلى شكل خيمة للمباريات الثنائية. لكل وضعية واجهتها الخاصة.",
+    f3_t: "تقييم صوتي دون اتصال 100%", f3_d: "يقيّم نظام Apple للتعرّف على الكلام النطقَ على الجهاز نفسه، والصوت لا يغادر جهازك أبدًا. بلا خوادم ولا تحليلات ولا حساب.",
+    f4_t: "Apple Watch كجهاز تحكم للمعلّم وأدوات شاشة القفل", f4_d: "تجوّل في الفصل وقدّم التلميحات وشغّل النطق وقيّم الإجابات من معصمك، مع اهتزازات مختلفة لكل إجراء. تعرض الأنشطة المباشرة وDynamic Island النتيجة، وتنقلب كلمة اليوم مباشرة على شاشة القفل.",
+    price_kicker: "أسعار بسيطة وعادلة", price_title: "ادفع مرة واحدة، أو درّس فصلًا كاملًا.",
+    c1_badge: "تجربة مجانية", c1_t: "جرّب 3 جلسات ثنائية كاملة مجانًا", c1_l1: "كل الميزات مفتوحة", c1_l2: "تقييم النطق على الجهاز", c1_l3: "Apple Watch والأدوات", c1_l4: "الدراسة الفردية مجانية دائمًا", c1_cta: "ابدأ مجانًا",
+    c2_badge: "الأفضل قيمة", once: "مرة واحدة", c2_t: "DuoTutor Pro مدى الحياة: ادفع مرة واحدة وامتلكه للأبد", c2_l1: "جلسات ثنائية غير محدودة", c2_l2: "كل مجموعات اللغات المضمّنة", c2_l3: "الساعة والأدوات للأبد", c2_l4: "بدون اشتراكات", c2_cta: "احصل على مدى الحياة",
+    c3_badge: "للفصول الدراسية", per_year: "/ سنة", c3_t: "حزمة المعلّم", c3_l1: "كل ميزات Pro", c3_l2: "مجموعات مناهج JSON/CSV مخصّصة", c3_l3: "ملفات لعدة طلاب", c3_l4: "تقارير تقدّم PDF دون اتصال بلمسة واحدة", c3_cta: "ابدأ حزمة المعلّم",
+    price_note: "الأسعار بالدولار الأمريكي، وقد تختلف أسعار App Store المحلية. تتجدد حزمة المعلّم سنويًا ويمكن إلغاؤها في أي وقت من الإعدادات.",
+    footer_privacy: "سياسة الخصوصية (GDPR · بلا سحابة)", footer_terms: "شروط الاستخدام" },
+  es: { _name: "Español", nav_features: "Funciones", nav_pricing: "Precios", nav_privacy: "Privacidad",
+    hero_kicker: "Aprendizaje a dúo en la mesa", hero_title: "Dos mentes. Un dispositivo.",
+    hero_sub: "Déjalo plano entre los dos. El tutor ve la respuesta, el alumno ve el reto y su mitad gira 180° para que estéis cara a cara.",
+    badge_small: "Consíguelo en el", hero_cta2: "3 sesiones Duo gratis", hero_note: "iPhone · iPad · Apple Watch · 100 % sin conexión · Sin cuenta",
+    p_closed: "Cerrado", p_open: "Abierto", p_tabletop: "Mesa", learner: "ALUMNO", tutor: "TUTOR",
+    cap_closed: "Cerrado: tarjetas con repetición espaciada, rachas y quiz rápido de 60 segundos.",
+    cap_open: "Abierto: panel de análisis con gramática, etimología, ondas y mapas de calor.",
+    cap_tabletop: "Mesa: dos mitades distintas. La del alumno gira 180° para mirarle de frente.",
+    feat_kicker: "Hecho para el hardware", feat_title: "No es otra app de tarjetas.",
+    f1_t: "Dúo asimétrico en la mesa", f1_d: "Dos interfaces distintas en una pantalla, nunca en espejo. La mitad del tutor tiene la respuesta, la fonética, las pistas y la evaluación. La del alumno solo muestra el reto, el micrófono y el combo, girada 180° hacia él.",
+    f2_t: "3 posturas adaptativas", f2_d: "Cerrado para repasar solo con SM-2. Plano para el panel de análisis. En tienda para partidas a dos. Cada postura tiene su propia interfaz.",
+    f3_t: "Evaluación de voz 100 % sin conexión", f3_d: "El reconocimiento de voz de Apple en el dispositivo puntúa la pronunciación. Tu audio nunca sale del dispositivo: sin servidores, sin analíticas, sin cuenta.",
+    f4_t: "Apple Watch como mando del tutor y widgets de bloqueo", f4_d: "Recorre el aula y da pistas, reproduce el audio o corrige respuestas desde la muñeca, con hápticos distintos. Las Actividades en directo y la Dynamic Island muestran el marcador, y la palabra Duo del día se gira en la pantalla de bloqueo.",
+    price_kicker: "Precios simples y justos", price_title: "Paga una vez o enseña a una clase.",
+    c1_badge: "PRUEBA GRATIS", c1_t: "Prueba 3 sesiones Duo completas gratis", c1_l1: "Todo desbloqueado", c1_l2: "Evaluación de voz en el dispositivo", c1_l3: "Apple Watch y widgets", c1_l4: "Estudio individual gratis siempre", c1_cta: "Empezar gratis",
+    c2_badge: "MEJOR VALOR", once: "pago único", c2_t: "DuoTutor Pro de por vida: paga una vez, tuyo para siempre", c2_l1: "Sesiones Duo ilimitadas", c2_l2: "Todos los mazos de idiomas", c2_l3: "Watch y widgets para siempre", c2_l4: "Sin suscripciones", c2_cta: "Obtener de por vida",
+    c3_badge: "PARA AULAS", per_year: "/ año", c3_t: "Pack Docente", c3_l1: "Todo lo de Pro", c3_l2: "Mazos JSON/CSV personalizados", c3_l3: "Perfiles para varios alumnos", c3_l4: "Informes PDF sin conexión con un toque", c3_cta: "Empezar Pack Docente",
+    price_note: "Precios en USD; los precios locales de la App Store pueden variar. El Pack Docente se renueva cada año y puede cancelarse en cualquier momento en Ajustes.",
+    footer_privacy: "Privacidad (RGPD · Cero nube)", footer_terms: "Condiciones de uso" },
+  ja: { _name: "日本語", nav_features: "機能", nav_pricing: "料金", nav_privacy: "プライバシー",
+    hero_kicker: "テーブルで2人学習", hero_title: "2人の頭脳。1台のデバイス。",
+    hero_sub: "2人の間に平らに置くだけ。先生には答え、生徒には問題。生徒側は180°回転して、向かい合って学べます。",
+    badge_small: "ダウンロード", hero_cta2: "デュオ3回無料", hero_note: "iPhone · iPad · Apple Watch · 完全オフライン · アカウント不要",
+    p_closed: "閉じる", p_open: "開く", p_tabletop: "テーブル", learner: "生徒", tutor: "先生",
+    cap_closed: "閉じた状態：間隔反復カード、連続記録、60秒クイズ。",
+    cap_open: "開いた状態：文法・語源・波形・ヒートマップを並べた分析画面。",
+    cap_tabletop: "テーブル：異なる2つの画面。生徒側は180°回転して向かい合います。",
+    feat_kicker: "ハードウェアのために設計", feat_title: "ただの単語カードアプリではありません。",
+    f1_t: "非対称テーブルトップ対戦", f1_d: "1つの画面に異なる2つのUI、鏡写しにはしません。先生側には答え、発音記号、ヒント、採点。生徒側には問題、マイク、コンボだけを、180°回転して表示します。",
+    f2_t: "3つのアダプティブ姿勢", f2_d: "閉じればSM-2の1人練習、平らに開けば分析画面、テント型なら2人対戦。姿勢ごとに専用のUIです。",
+    f3_t: "完全オフラインの発音採点", f3_d: "Appleの端末内音声認識で発音を採点。音声は端末の外に出ません。サーバーも解析もアカウントもなし。",
+    f4_t: "Apple Watchリモコンとロック画面ウィジェット", f4_d: "教室を歩きながら、手首からヒント、音声再生、正誤判定。操作ごとに異なる触覚フィードバック付き。ライブアクティビティとDynamic Islandにスコアを表示し、今日のデュオ単語はロック画面で裏返せます。",
+    price_kicker: "シンプルで公正な料金", price_title: "買い切りか、クラスで使うか。",
+    c1_badge: "無料体験", c1_t: "デュオセッション3回まで全機能無料", c1_l1: "全機能を開放", c1_l2: "端末内の発音採点", c1_l3: "Apple Watchとウィジェット", c1_l4: "1人学習はずっと無料", c1_cta: "無料で始める",
+    c2_badge: "おすすめ", once: "買い切り", c2_t: "DuoTutor Pro 買い切り：一度払えばずっと使える", c2_l1: "デュオセッション無制限", c2_l2: "内蔵の全言語デッキ", c2_l3: "Watchとウィジェットも永久に", c2_l4: "サブスクなし", c2_cta: "買い切りを購入",
+    c3_badge: "教室向け", per_year: "/ 年", c3_t: "ティーチャーパック", c3_l1: "Proの全機能", c3_l2: "JSON/CSVでカリキュラム作成", c3_l3: "複数の生徒プロフィール", c3_l4: "ワンタップでオフラインPDFレポート", c3_cta: "ティーチャーパックを始める",
+    price_note: "価格は米ドル表示です。地域のApp Store価格とは異なる場合があります。ティーチャーパックは毎年自動更新され、設定からいつでも解約できます。",
+    footer_privacy: "プライバシーポリシー（GDPR・クラウドなし）", footer_terms: "利用規約" }
+};
+
+let lang = 'en', posture = 'tabletop';
+function t(k) { return (I18N[lang] && I18N[lang][k]) || I18N.en[k] || ''; }
+function applyLang(l) {
+  lang = I18N[l] ? l : 'en';
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.getElementById('langLabel').textContent = I18N[lang]._name;
+  document.querySelectorAll('#langMenu .dropdown-item').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  document.getElementById('postureCaption').textContent = t('cap_' + posture);
+  try { localStorage.setItem('duotutor.lang', lang); } catch (e) {}
+  const url = new URL(location.href); url.searchParams.set('lang', lang); history.replaceState(null, '', url);
+}
+function setPosture(p) {
+  posture = p;
+  document.getElementById('dev').dataset.p = p;
+  document.querySelectorAll('.posture-toggle .btn').forEach(b => { const on = b.dataset.p === p; b.classList.toggle('active', on); b.setAttribute('aria-pressed', on); });
+  document.getElementById('postureCaption').textContent = t('cap_' + p);
+}
+document.querySelectorAll('#langMenu .dropdown-item').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+document.querySelectorAll('.posture-toggle .btn').forEach(b => b.addEventListener('click', () => setPosture(b.dataset.p)));
+
+// Initial language: ?lang= → saved → browser
+(function () {
+  let saved = null; try { saved = localStorage.getItem('duotutor.lang'); } catch (e) {}
+  const q = new URLSearchParams(location.search).get('lang');
+  const nav = (navigator.language || 'en').slice(0, 2);
+  applyLang(q || saved || (I18N[nav] ? nav : 'en'));
+  setPosture('tabletop');
+})();
+
+// Auto-cycle the posture preview until the visitor interacts
+const cycle = ['closed', 'open', 'tabletop']; let ci = 2;
+const timer = setInterval(() => { ci = (ci + 1) % 3; setPosture(cycle[ci]); }, 3500);
+document.querySelector('.posture-toggle').addEventListener('click', () => clearInterval(timer), { once: true });
+
+// Waveform bars
+const wave = document.querySelector('.wave');
+for (let i = 0; i < 32; i++) { const b = document.createElement('i'); b.style.height = (14 + Math.abs(Math.sin(i * 0.7)) * 46) + 'px'; b.style.animationDelay = (i * 0.05) + 's'; wave.appendChild(b); }
+
+// Scroll reveal
+if (!('IntersectionObserver' in window)) document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+const io = !('IntersectionObserver' in window) ? { observe() {}, unobserve() {} } : new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
